@@ -1,0 +1,250 @@
+/* ----- ----- DATOS GENERALES ----- ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------- */
+/* VARIABLES GENERALES */
+/* ------------------------- */
+:root {
+    --color-bg              :#FF7E67;
+    --color-bg-secon        :#2B3A4B;
+    
+    --laptop-b              :#EAFBEA;
+    --laptop-m              :#253a4b;
+    
+    --text-color            :#47e4bb;
+
+/* ----- ----- Variables del Scrollbar ----- ----- */
+    --scroll-thumb          :#47E4BB;
+    --scroll-thumb-active   :#5edfff;
+    --scroll-thumb-hover    :#3cb897;
+    --scroll-track          :#ecfcff;
+    --scroll-hover-active   :#b2fcff;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+code {
+    background-color: var(--text-color);
+    color: var(--color-bg-secon);
+    padding: 0px 3px;
+}
+
+span {
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100vh;
+    /* margin: 5px; */
+    background-color: var(--color-bg);
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+.container {
+    padding: 1rem 1.5rem;
+    width: 531px;
+    height: 344px;
+    background-color: var(--laptop-m);
+    border-radius: 15px 15px 0 0 ;
+}
+
+.pantalla {
+    padding: 1rem 1.5rem;
+    width: 531px;
+    height: 344px;
+    background-color: var(--laptop-b);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    color: var(--color-bg-secon);
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 1.3;
+    overflow: auto;
+    height: 19.5rem;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.title {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    color: var(--laptop-b);
+    margin-bottom: 2rem;
+}
+
+.text a {
+    color: var(--laptop-m);
+}
+.text a:hover {
+    text-decoration: underline;
+}
+
+.base::after {
+    content: '';
+    width: 557px;
+    height: 22px;
+    border-radius: 0 0 15px 15px;
+    left: 31.9%;
+    right: 31.9%;
+    background-color: var(--laptop-b);
+    position: absolute;
+}
+
+.pantalla .text:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.article-header__footer {
+    width: 100%;
+}
+.article-user {
+    display: inline-flex;
+    color: var(--laptop-b);
+}
+
+.s-cross-center {
+    align-items: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.article-user__profile {
+    border-radius: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.s-mr-l {
+    margin-right: .5rem;
+}
+
+.article-user, .small {
+    font-weight: 200;
+    font-size: .8rem;
+}
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+/* ------------------------- */
+/* SCROLLBAR */
+/* ------------------------- */
+
+:root {    
+/* ----- ----- Variables del Scrollbar ----- ----- */
+--scroll-thumb          :#47E4BB;
+--scroll-thumb-active   :#5edfff;
+--scroll-thumb-hover    :#3cb897;
+--scroll-track          :#EAFBEA;
+--scroll-hover-active   :#b2fcff;
+}
+
+.pantalla::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    /* display: none; */
+}
+
+.pantalla::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb);
+    border-radius: 4px;
+}
+
+.pantalla::-webkit-scrollbar-thumb:active {
+    background-color: var(--scroll-thumb-active);
+}
+
+.pantalla::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-hover);
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.pantalla::-webkit-scrollbar-track {
+    background-color: var(--scroll-track);
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-track:hover,
+.container::-webkit-scrollbar-track:active {
+    background-color: var(--scroll-hover-active);
+}
+
+
+/* ----- ----- Se agrego nuevos estilos para reses sociales ----- ----- */
+/* ------------------------- */
+/* SOCIAL MEDIA */
+/* ------------------------- */
+
+.footer {
+    /* background-color: blue; */
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.social-media-footer {
+    --font-color: var(--color-bg-secon);
+    --font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .social-columns {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.625rem;
+    font-size: var(--font-size);
+    color: var(--font-color);
+    font-family: var(--body-font);
+    width: 100%;
+  }
+  
+  .social-columns .column {
+    padding: 0.4rem;
+    text-align: center;
+  }
+  
+  .social-columns a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .social-columns a:hover {
+    text-decoration: underline;
+  }
+  
+  /* GITHUB */
+  .github-code {
+    color: var(--font-color);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  .github-code a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .github-code a:hover {
+      text-decoration: underline;
+  }
+
+  /* ----- ----- Final ----- ----- */

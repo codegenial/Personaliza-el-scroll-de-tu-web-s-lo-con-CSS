@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personaliza el scroll de tu sitio web solo con css</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/cd9352d84b.js"></script>
+<body>
+    <h1 class="title">
+        Personaliza el scroll de <br>tu web sólo con CSS
+    </h1>
+    <div class="container">
+        <section class="pantalla">
+            <h2>Aprende a personalizar la barra de scroll de tu sitio web de forma rápida y sin javascript.</h2>
+            <p class="text">Fuente:
+                <a href="https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css" target="_blanck">EDteam/blog</a>
+            </p>
+            <p class="text">
+                ¿Te has llegado a preguntar cómo puedes personalizar la barra de scroll de tu sitio web? <br>Ya sea
+                porque quieres crear un scroll que se ve sensacional con una interfaz que diseñaste o el simple hecho de
+                que los estilos que tiene por defecto son aburridos y feos. <br> Sea cual sea la razón has llegado al
+                lugar correcto, porque el día de hoy aprenderemos a cómo personalizar el scroll en una página web
+                utilizando sólo
+                <code> CSS</code>.
+                <br>
+                <span>Advertencia: este método sólo es compatible con navegadores basados en -Webkit.
+                <br>
+                Para mayor información visita</span>
+                <a href="https://caniuse.com/#search=scrollbar" target="_blank">Can I Use</a>.
+            </p>
+
+            <p class="text">
+                Empecemos conociendo las partes del <code>scroll</code>, que si bien se divide en varios componentes,
+                los que más nos importan en esta ocasión son tres: <span>scroll, track y thumb</span>.
+            </p>
+
+            <p class="text">Es ese sencillo gesto que el usuario realiza cuando desliza el dedo por la pantalla o utiliza la rueda del ratón para subir o bajar mientras observa los contenidos de una página.</p>
+            
+            <p class="text">Una vez que ya conocemos la manera en que se conforma el scroll y con la ayuda del pseudo elemento <code>::-webkit-scrollbar</code> procederemos a crear nuestros estilos.</p>           
+
+            <h2>webkit-scrollbar</h2>
+            <p class="text">
+                Con <code>::-webkit-scrollbar</code> nos encargaremos de definir la altura y la anchura del componente
+                Scroll. Y si lo deseas, lo puedes ocultar sin afectar su funcionamiento.
+            </p>
+            <h2>webkit-scrollbar-thumb</h2>
+            <p class="text">
+                Con <code>::-webkit-scrollbar-thumb</code> podremos modificar los bordes, fondo y sombras el componente
+                thumb, lo mejor de todo es que podemos utilizar las pseudo clases active y hover sobre este componente
+            </p>
+            <h2>webkit-scrollbar-track</h2>
+            <p class="text">
+                Con <code>::-webkit-scrollbar-track</code> es la misma historia que con ::-webkit-scrollbar-thumb
+                respecto a los estilos y pseudo clases, pero aplicados al track.
+            </p>
+            <p class="text">
+                Y de esta manera tan sencilla podrás crear variedad de estilos para la barra de scroll y usarlos donde
+                lo requieras en tu web.
+            </p>
+            <footer class="article-header__footer">
+                <a href="" class="article-user s-cross-center">
+                    <img class="article-user__profile s-mr-l" src="img/profile.jpg">
+                    <span class="small">David Mendoza Quimis | Codegenial</span>
+                </a>
+            </footer>
+        </section>
+    </div>
+    <span class="base"></span>
+    <div class="footer social-media-footer">
+        <!-- GitHub -->
+        <div class="github-code">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/codegenial/Checkbox-Personalizado" target="_blank">View code on GitHub
+            </a>
+        </div>
+        <div class="columns is-mobile social-columns">
+            <div class="column">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <a href="https://twitter.com/codegenial" target="_blank">codegenial</a>
+            </div>
+            <div class="column">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/codegenial" target="_blank">codegenial</a>
+            </div>
+            <div class="column">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <a href="https://instagram.com/codegenial" target="_blank">codegenial</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
